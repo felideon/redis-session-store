@@ -24,11 +24,7 @@ module ActionDispatch
         super
 
         @default_options = {
-          :namespace => 'rack:session',
-          :host => 'localhost',
-          :port => '6379',
-          :db => 0,
-          :key_prefix => ""
+          :namespace => 'rack:session'
         }.update(options)
 
         @redis = Redis.new(@default_options)
