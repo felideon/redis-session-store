@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
      "README.md",
      "Rakefile",
      "VERSION",
-     "lib/redis-session-store.rb"
+     "lib/redis_session_store.rb"
   ]
   s.homepage = %q{http://github.com/casualjim/redis-session-store}
   s.rdoc_options = ["--charset=UTF-8"]
