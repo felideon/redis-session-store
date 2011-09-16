@@ -49,7 +49,7 @@ module ActionDispatch
           [sid, session]
         end
 
-        def set_session(env, sid, session_data, options)
+        def set_session(env, sid, session_data, options = {})
           expiry  = options[:expire_after] || nil
 
           @redis.pipelined do
