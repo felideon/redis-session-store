@@ -60,6 +60,12 @@ module ActionDispatch
           sid
         end
 
+        def destroy_session(env, sid, session_data)
+          if sid = current_session_id(env)
+            @redis.del(prefixed(sid))
+          end
+        end
+
     end
   end
 end
